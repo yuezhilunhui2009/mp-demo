@@ -1,15 +1,38 @@
 {
-  "pages":[
-    "pages/index/index",
-    "pages/logs/logs"
+  "pages": [
+    "pages/styles-demo/index/index",
+    "pages/styles-demo/width/width",
+    "pages/framework-demo/index/index",
+    "pages/comps-demo/index/index",
+    "pages/apis-demo/index/index"
   ],
-  "window":{
-    "backgroundTextStyle":"light",
-    "navigationBarBackgroundColor": "#123456",
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "mp-demo",
-    "navigationBarTextStyle":"#fff",
+    "navigationBarTextStyle": "#fff",
     "navigationStyle": "default",
     "backgroundColor": "#eee",
     "enablePullDownRefresh": true
+  },
+  "tarBar": {
+    "list": [
+      {
+        "pagePath": "pages/styles-demo/index",
+        "text": "样式"
+      },
+      {
+        "pagePath": "pages/framework-demo/index",
+        "text": "框架"
+      },
+      {
+        "pagePath": "pages/comps-demo/index",
+        "text": "组件"
+      },
+      {
+        "pagePath": "pages/apis-demo/index",
+        "text": "接口"
+      }
+    ]
   }
 }

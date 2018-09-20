@@ -1,0 +1,10 @@
+<import src="../../../common/head.wxml" />
+<import src="../../../common/foot.wxml" />
+
+<view class="container">
+    <template is="head" data="{{title: 'width'}}" />
+
+    <view class="page-body">width</view>
+    
+    <template is="foot" />
+</view>
