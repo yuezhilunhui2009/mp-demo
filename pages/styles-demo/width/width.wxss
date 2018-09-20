@@ -1,1 +1,12 @@
 /* pages/styles-demo/width/width.wxss */
+.width-px {
+    width: 100px;
+    height: 100px;
+    background-color: #34ff34;
+}
+
+.width-px {
+    width: 100rpx;
+    height: 100rpx;
+    background-color: #34ff34;
+}

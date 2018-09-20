@@ -7,32 +7,54 @@
     "pages/apis-demo/index/index"
   ],
   "window": {
-    "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "mp-demo",
-    "navigationBarTextStyle": "#fff",
+    "navigationBarBackgroundColor": "#222",
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "微信小程序 demo",
     "navigationStyle": "default",
-    "backgroundColor": "#eee",
-    "enablePullDownRefresh": true
+    "backgroundColor": "#ddd",
+    "backgroundTextStyle": "light",
+    "backgroundColorTop": "#fff",
+    "backgroundColorBottom": "#fff",
+    "enablePullDownRefresh": false,
+    "onReachBottomDistance": 50
   },
-  "tarBar": {
+  "tabBar": {
+    "color": "#888",
+    "selectedColor": "#34ff34",
+    "backgroundColor": "#222",
+    "borderStyle": "black",
+    "position": "top",
     "list": [
       {
-        "pagePath": "pages/styles-demo/index",
+        "pagePath": "pages/styles-demo/index/index",
         "text": "样式"
       },
       {
-        "pagePath": "pages/framework-demo/index",
+        "pagePath": "pages/framework-demo/index/index",
         "text": "框架"
       },
       {
-        "pagePath": "pages/comps-demo/index",
+        "pagePath": "pages/comps-demo/index/index",
         "text": "组件"
       },
       {
-        "pagePath": "pages/apis-demo/index",
+        "pagePath": "pages/apis-demo/index/index",
         "text": "接口"
       }
     ]
-  }
+  },
+  "networkTimeout": {
+    "request": 60000,
+    "connectSocket": 60000,
+    "uploadFile": 60000,
+    "downloadFile": 60000
+  },
+  "debug": true,
+  "functionalPages": false,
+  "subPackages": [],
+  "workers": "",
+  "requiredBackgroundModes": [],
+  "plugins": {},
+  "preloadRule": {},
+  "resizable": false
 }
