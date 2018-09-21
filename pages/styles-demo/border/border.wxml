@@ -1,0 +1,63 @@
+<!--pages/styles-demo/border/border.wxml-->
+<view class="container">
+    <view class="example">
+        <text>属性: border-style</text>
+        <radio-group class="radio-group" bindchange="onRadioChange">
+            <label class="radio" wx:for="{{borderStyleTypes}}">
+                <radio value="{{item.value}}" checked="{{item.checked}}"/>{{item.name}}
+            </label>
+        </radio-group>
+        
+        <text>属性: border-width</text>
+        <text>单位: rpx</text>
+        <slider 
+            show-value="{{true}}" 
+            min="{{0}}" 
+            max="{{375}}" 
+            step="1"
+            value="{{egBorderWidth}}"
+            bindchanging="onSlideChanging"
+            data-egname="eg-border-width"
+        />
+
+        <text>属性: border-color</text>
+        <slider 
+            show-value="{{true}}" 
+            min="{{0}}" 
+            max="{{16777215}}" 
+            step="1"
+            value="{{egBorderColor}}"
+            bindchanging="onSlideChanging"
+            data-egname="eg-border-color"
+        />
+
+        <text>属性: border-radius</text>
+        <text>单位: rpx</text>
+        <slider 
+            show-value="{{true}}" 
+            min="{{0}}" 
+            max="{{375}}" 
+            step="1"
+            value="{{egBorderRadius}}"
+            bindchanging="onSlideChanging"
+            data-egname="eg-border-radius"
+        />
+
+        <!-- demo -->
+        <text>正方形：</text>
+        <view 
+            class="cube"
+            style="border-style: {{egBorderStyle}};border-width: {{egBorderWidth}}rpx;border-color: {{egBorderColorHex}};border-radius: {{egBorderRadius}}rpx"
+        >
+            <view class="cube-content"></view>
+        </view>
+
+        <text>长方形：</text>
+        <view 
+            class="cube"
+            style="width: 240rpx;border-style: {{egBorderStyle}};border-width: {{egBorderWidth}}rpx;border-color: {{egBorderColorHex}};border-radius: {{egBorderRadius}}rpx"
+        >
+            <view class="cube-content"></view>
+        </view>
+    </view>
+</view>

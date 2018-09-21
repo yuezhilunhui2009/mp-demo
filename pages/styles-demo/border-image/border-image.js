@@ -1,23 +1,11 @@
-// pages/styles-demo/width/width.js
-const domNameAndDataMap = {
-  ['eg-width-px']: 'egWidthPx',
-  ['eg-width-rpx']: 'egWidthRpx',
-  ['eg-width-vw']: 'egWidthVw',
-  ['eg-width-percent']: 'egWidthPercent',
-  ['eg-width-rem']: 'egWidthRem',
-}
-
+// pages/styles-demo/border-image/border-image.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    egWidthPx: 100,
-    egWidthRpx: 375,
-    egWidthVw: 10,
-    egWidthPercent: 50,
-    egWidthRem: 3.75,
+
   },
 
   /**
@@ -74,11 +62,5 @@ Page({
    */
   onShareAppMessage: function () {
 
-  },
-
-  onSlideChanging: function (e) {
-    this.setData({
-      [domNameAndDataMap[e.currentTarget.dataset.egname]]: e.detail.value,
-    })
-  },
+  }
 })

@@ -1,4 +1,4 @@
-/* pages/styles-demo/width/width.wxss */
+/* pages/styles-demo/height/height.wxss */
 text {
     margin: 18px;
 }
@@ -8,6 +8,6 @@ text {
 }
 
 .example .block {
-    height: 100px;
+    width: 100%;
     background-color: #34ff34;
 }

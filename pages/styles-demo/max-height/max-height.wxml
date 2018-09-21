@@ -1,0 +1,45 @@
+<!--pages/styles-demo/max-height/max-height.wxml-->
+<view class="container">
+    <view class="example">
+        <text>单位: rpx</text>
+        <slider 
+            show-value="{{true}}" 
+            min="{{0}}" 
+            max="{{750}}" 
+            step="1"
+            value="{{egMaxHeightRpx}}"
+            bindchanging="onSlideChanging"
+            data-egname="eg-max-height-rpx"
+        />
+        <view class="block" style="height: {{egMaxHeightRpx}}rpx"></view>
+    </view>
+
+    <view class="example">
+        <text>单位: vh</text>
+        <slider 
+            show-value="{{true}}" 
+            min="{{0}}" 
+            max="{{100}}" 
+            step="1"
+            value="{{egMaxHeightVh}}"
+            bindchanging="onSlideChanging"
+            data-egname="eg-max-height-vh"
+        />
+        <view class="block" style="height: {{egMaxHeightVh}}vh"></view>
+    </view>
+
+    <view class="example">
+        <text>单位: %</text>
+        <slider 
+            show-value="{{true}}" 
+            min="{{0}}" 
+            max="{{100}}" 
+            step="1"
+            value="{{egMaxHeightPercent}}"
+            bindchanging="onSlideChanging"
+            data-egname="eg-max-height-percent"
+        />
+        <view class="block" style="height: {{egMaxHeightPercent}}%"></view>
+    </view>
+</view>
+

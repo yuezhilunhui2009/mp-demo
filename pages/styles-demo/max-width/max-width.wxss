@@ -1,4 +1,4 @@
-/* pages/styles-demo/width/width.wxss */
+/* pages/styles-demo/max-width/max-width.wxss */
 text {
     margin: 18px;
 }

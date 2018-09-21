@@ -4,7 +4,16 @@
     "pages/styles-demo/width/width",
     "pages/framework-demo/index/index",
     "pages/comps-demo/index/index",
-    "pages/apis-demo/index/index"
+    "pages/apis-demo/index/index",
+    "pages/styles-demo/max-width/max-width",
+    "pages/styles-demo/min-width/min-width",
+    "pages/styles-demo/height/height",
+    "pages/styles-demo/padding/padding",
+    "pages/styles-demo/min-height/min-height",
+    "pages/styles-demo/max-height/max-height",
+    "pages/styles-demo/border/border",
+    "pages/styles-demo/box-shadow/box-shadow",
+    "pages/styles-demo/border-image/border-image"
   ],
   "window": {
     "navigationBarBackgroundColor": "#222",

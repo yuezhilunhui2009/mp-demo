@@ -1,0 +1,44 @@
+<!--pages/styles-demo/min-width/min-width.wxml-->
+<view class="container">
+    <view class="example">
+        <text>单位: rpx</text>
+        <slider 
+            show-value="{{true}}" 
+            min="{{0}}" 
+            max="{{750}}" 
+            step="1"
+            value="{{egMinWidthRpx}}"
+            bindchanging="onSlideChanging"
+            data-egname="eg-min-width-rpx"
+        />
+        <view class="block" style="min-width: {{egMinWidthRpx}}rpx"></view>
+    </view>
+
+    <view class="example">
+        <text>单位: vw</text>
+        <slider 
+            show-value="{{true}}" 
+            min="{{0}}" 
+            max="{{100}}" 
+            step="1"
+            value="{{egMinWidthVw}}"
+            bindchanging="onSlideChanging"
+            data-egname="eg-min-width-vw"
+        />
+        <view class="block" style="min-width: {{egMinWidthVw}}vw"></view>
+    </view>
+
+    <view class="example">
+        <text>单位: %</text>
+        <slider 
+            show-value="{{true}}" 
+            min="{{0}}" 
+            max="{{100}}" 
+            step="1"
+            value="{{egMinWidthPercent}}"
+            bindchanging="onSlideChanging"
+            data-egname="eg-min-width-percent"
+        />
+        <view class="block" style="min-width: {{egMinWidthPercent}}%"></view>
+    </view>
+</view>

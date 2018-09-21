@@ -1,11 +1,12 @@
-// pages/styles-demo/width/width.js
+// pages/styles-demo/height/height.js
 const domNameAndDataMap = {
-  ['eg-width-px']: 'egWidthPx',
-  ['eg-width-rpx']: 'egWidthRpx',
-  ['eg-width-vw']: 'egWidthVw',
-  ['eg-width-percent']: 'egWidthPercent',
-  ['eg-width-rem']: 'egWidthRem',
+  ['eg-height-px']: 'egHeightPx',
+  ['eg-height-rpx']: 'egHeightRpx',
+  ['eg-height-vh']: 'egHeightVh',
+  ['eg-height-percent']: 'egHeightPercent',
+  ['eg-height-rem']: 'egHeightRem',
 }
+
 
 Page({
 
@@ -13,11 +14,11 @@ Page({
    * 页面的初始数据
    */
   data: {
-    egWidthPx: 100,
-    egWidthRpx: 375,
-    egWidthVw: 10,
-    egWidthPercent: 50,
-    egWidthRem: 3.75,
+    egHeightPx: 100,
+    egHeightRpx: 375,
+    egHeightVh: 10,
+    egHeightPercent: 50,
+    egHeightRem: 3.75,
   },
 
   /**

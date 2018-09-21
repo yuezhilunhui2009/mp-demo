@@ -1,0 +1,66 @@
+<!--pages/styles-demo/padding/padding.wxml-->
+<view class="container">
+    <view class="example">
+        <text>属性: padding-top</text>
+        <text>单位: rpx</text>
+        <slider 
+            show-value="{{true}}" 
+            min="{{0}}" 
+            max="{{750}}" 
+            step="1"
+            value="{{egPaddingTop}}"
+            bindchanging="onSlideChanging"
+            data-egname="eg-padding-top"
+        />
+        <text>属性: padding-right</text>
+        <text>单位: rpx</text>
+        <slider 
+            show-value="{{true}}" 
+            min="{{0}}" 
+            max="{{750}}" 
+            step="1"
+            value="{{egPaddingRight}}"
+            bindchanging="onSlideChanging"
+            data-egname="eg-padding-right"
+        />
+        <text>属性: padding-bottom</text>
+        <text>单位: rpx</text>
+        <slider 
+            show-value="{{true}}" 
+            min="{{0}}" 
+            max="{{750}}" 
+            step="1"
+            value="{{egPaddingBottom}}"
+            bindchanging="onSlideChanging"
+            data-egname="eg-padding-bottom"
+        />
+        <text>属性: padding-left</text>
+        <text>单位: rpx</text>
+        <slider 
+            show-value="{{true}}" 
+            min="{{0}}" 
+            max="{{750}}" 
+            step="1"
+            value="{{egPaddingLeft}}"
+            bindchanging="onSlideChanging"
+            data-egname="eg-padding-left"
+        />
+        <text>属性: padding</text>
+        <text>单位: rpx</text>
+        <slider 
+            show-value="{{true}}" 
+            min="{{0}}" 
+            max="{{750}}" 
+            step="1"
+            value="{{egPadding}}"
+            bindchanging="onSlideChanging"
+            data-egname="eg-padding"
+        />
+        <view 
+            class="cube"
+            style="padding-top: {{egPaddingTop}}rpx;padding-right: {{egPaddingRight}}rpx;padding-bottom: {{egPaddingBottom}}rpx;padding-left: {{egPaddingLeft}}rpx;"
+        >
+            <view class="cube-content"></view>
+        </view>
+    </view>
+</view>

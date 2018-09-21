@@ -1,10 +1,8 @@
-// pages/styles-demo/width/width.js
+// pages/styles-demo/min-width/min-width.js
 const domNameAndDataMap = {
-  ['eg-width-px']: 'egWidthPx',
-  ['eg-width-rpx']: 'egWidthRpx',
-  ['eg-width-vw']: 'egWidthVw',
-  ['eg-width-percent']: 'egWidthPercent',
-  ['eg-width-rem']: 'egWidthRem',
+  ['eg-min-width-rpx']: 'egMinWidthRpx',
+  ['eg-min-width-vw']: 'egMinWidthVw',
+  ['eg-min-width-percent']: 'egMinWidthPercent',
 }
 
 Page({
@@ -13,11 +11,9 @@ Page({
    * 页面的初始数据
    */
   data: {
-    egWidthPx: 100,
-    egWidthRpx: 375,
-    egWidthVw: 10,
-    egWidthPercent: 50,
-    egWidthRem: 3.75,
+    egMinWidthRpx: 375,
+    egMinWidthVw: 10,
+    egMinWidthPercent: 50,
   },
 
   /**

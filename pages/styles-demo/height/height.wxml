@@ -1,3 +1,4 @@
+<!--pages/styles-demo/height/height.wxml-->
 <view class="container">
     <view class="example">
         <text>单位: px</text>
@@ -6,11 +7,11 @@
             min="{{0}}" 
             max="{{750}}" 
             step="1"
-            value="{{egWidthPx}}"
+            value="{{egHeightPx}}"
             bindchanging="onSlideChanging"
-            data-egname="eg-width-px"
+            data-egname="eg-height-px"
         />
-        <view class="block" style="width: {{egWidthPx}}px"></view>
+        <view class="block" style="height: {{egHeightPx}}px"></view>
     </view>
 
     <view class="example">
@@ -20,25 +21,25 @@
             min="{{0}}" 
             max="{{750}}" 
             step="1"
-            value="{{egWidthRpx}}"
+            value="{{egHeightRpx}}"
             bindchanging="onSlideChanging"
-            data-egname="eg-width-rpx"
+            data-egname="eg-height-rpx"
         />
-        <view class="block" style="width: {{egWidthRpx}}rpx"></view>
+        <view class="block" style="height: {{egHeightRpx}}rpx"></view>
     </view>
 
     <view class="example">
-        <text>单位: vw</text>
+        <text>单位: vh</text>
         <slider 
             show-value="{{true}}" 
             min="{{0}}" 
             max="{{100}}" 
             step="1"
-            value="{{egWidthVw}}"
+            value="{{egHeightVh}}"
             bindchanging="onSlideChanging"
-            data-egname="eg-width-vw"
+            data-egname="eg-height-vh"
         />
-        <view class="block" style="width: {{egWidthVw}}vw"></view>
+        <view class="block" style="height: {{egHeightVh}}vh"></view>
     </view>
 
     <view class="example">
@@ -48,11 +49,11 @@
             min="{{0}}" 
             max="{{100}}" 
             step="1"
-            value="{{egWidthPercent}}"
+            value="{{egHeightPercent}}"
             bindchanging="onSlideChanging"
-            data-egname="eg-width-percent"
+            data-egname="eg-height-percent"
         />
-        <view class="block" style="width: {{egWidthPercent}}%"></view>
+        <view class="block" style="height: {{egHeightPercent}}%"></view>
     </view>
 
     <view class="example">
@@ -62,10 +63,10 @@
             min="{{0}}" 
             max="{{7.5}}" 
             step="0.1"
-            value="{{egWidthRem}}"
+            value="{{egHeightRem}}"
             bindchanging="onSlideChanging"
-            data-egname="eg-width-rem"
+            data-egname="eg-height-rem"
         />
-        <view class="block" style="width: {{egWidthRem}}rem"></view>
+        <view class="block" style="height: {{egHeightRem}}rem"></view>
     </view>
 </view>

@@ -1,10 +1,8 @@
-// pages/styles-demo/width/width.js
+// pages/styles-demo/max-width/max-width.js
 const domNameAndDataMap = {
-  ['eg-width-px']: 'egWidthPx',
-  ['eg-width-rpx']: 'egWidthRpx',
-  ['eg-width-vw']: 'egWidthVw',
-  ['eg-width-percent']: 'egWidthPercent',
-  ['eg-width-rem']: 'egWidthRem',
+  ['eg-max-width-rpx']: 'egMaxWidthRpx',
+  ['eg-max-width-vw']: 'egMaxWidthVw',
+  ['eg-max-width-percent']: 'egMaxWidthPercent',
 }
 
 Page({
@@ -13,11 +11,9 @@ Page({
    * 页面的初始数据
    */
   data: {
-    egWidthPx: 100,
-    egWidthRpx: 375,
-    egWidthVw: 10,
-    egWidthPercent: 50,
-    egWidthRem: 3.75,
+    egMaxWidthRpx: 375,
+    egMaxWidthVw: 10,
+    egMaxWidthPercent: 50,
   },
 
   /**

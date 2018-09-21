@@ -1,0 +1,30 @@
+/* pages/styles-demo/border/border.wxss */
+text {
+    margin: 18px;
+}
+
+.example {
+    width: 100%;
+}
+
+.example .cube {
+    width: 100rpx;
+    height: 100rpx;
+    margin: 20rpx auto;
+    background-color: #34ff34;
+}
+
+.example .cube-content {
+    width: 100%;
+    height: 100%;
+    background-color: coral;
+    font-size: 14px;
+    line-height: 14px;
+    text-align: center;
+}
+
+.radio {
+    display: inline-block;
+    margin: 10rpx;
+    white-space: nowrap;
+}

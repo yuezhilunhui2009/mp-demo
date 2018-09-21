@@ -1,10 +1,10 @@
-// pages/styles-demo/width/width.js
+// pages/styles-demo/padding/padding.js
 const domNameAndDataMap = {
-  ['eg-width-px']: 'egWidthPx',
-  ['eg-width-rpx']: 'egWidthRpx',
-  ['eg-width-vw']: 'egWidthVw',
-  ['eg-width-percent']: 'egWidthPercent',
-  ['eg-width-rem']: 'egWidthRem',
+  ['eg-padding-top']: 'egPaddingTop',
+  ['eg-padding-right']: 'egPaddingRight',
+  ['eg-padding-bottom']: 'egPaddingBottom',
+  ['eg-padding-left']: 'egPaddingLeft',
+  ['eg-padding']: 'egPadding',
 }
 
 Page({
@@ -13,11 +13,11 @@ Page({
    * 页面的初始数据
    */
   data: {
-    egWidthPx: 100,
-    egWidthRpx: 375,
-    egWidthVw: 10,
-    egWidthPercent: 50,
-    egWidthRem: 3.75,
+    egPaddingTop: 10,
+    egPaddingRight: 10,
+    egPaddingBottom: 10,
+    egPaddingLeft: 10,
+    egPadding: 10,
   },
 
   /**
@@ -77,8 +77,20 @@ Page({
   },
 
   onSlideChanging: function (e) {
+    const { value } = e.detail
+    if (e.currentTarget.dataset.egname === 'eg-padding') {
+      this.setData({
+        egPaddingTop: value,
+        egPaddingRight: value,
+        egPaddingBottom: value,
+        egPaddingLeft: value,
+        egPadding: value,
+      })
+      return
+    }
+
     this.setData({
-      [domNameAndDataMap[e.currentTarget.dataset.egname]]: e.detail.value,
+      [domNameAndDataMap[e.currentTarget.dataset.egname]]: value,
     })
   },
 })

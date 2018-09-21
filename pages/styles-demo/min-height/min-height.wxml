@@ -1,0 +1,45 @@
+<!--pages/styles-demo/min-height/min-height.wxml-->
+<view class="container">
+    <view class="example">
+        <text>单位: rpx</text>
+        <slider 
+            show-value="{{true}}" 
+            min="{{0}}" 
+            max="{{750}}" 
+            step="1"
+            value="{{egMinHeightRpx}}"
+            bindchanging="onSlideChanging"
+            data-egname="eg-min-height-rpx"
+        />
+        <view class="block" style="height: {{egMinHeightRpx}}rpx"></view>
+    </view>
+
+    <view class="example">
+        <text>单位: vh</text>
+        <slider 
+            show-value="{{true}}" 
+            min="{{0}}" 
+            max="{{100}}" 
+            step="1"
+            value="{{egMinHeightVh}}"
+            bindchanging="onSlideChanging"
+            data-egname="eg-min-height-vh"
+        />
+        <view class="block" style="height: {{egMinHeightVh}}vh"></view>
+    </view>
+
+    <view class="example">
+        <text>单位: %</text>
+        <slider 
+            show-value="{{true}}" 
+            min="{{0}}" 
+            max="{{100}}" 
+            step="1"
+            value="{{egMinHeightPercent}}"
+            bindchanging="onSlideChanging"
+            data-egname="eg-min-height-percent"
+        />
+        <view class="block" style="height: {{egMinHeightPercent}}%"></view>
+    </view>
+</view>
+

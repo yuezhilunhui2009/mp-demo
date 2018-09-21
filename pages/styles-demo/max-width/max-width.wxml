@@ -1,0 +1,44 @@
+<!--pages/styles-demo/max-width/max-width.wxml-->
+<view class="container">
+    <view class="example">
+        <text>单位: rpx</text>
+        <slider 
+            show-value="{{true}}" 
+            min="{{0}}" 
+            max="{{750}}" 
+            step="1"
+            value="{{egMaxWidthRpx}}"
+            bindchanging="onSlideChanging"
+            data-egname="eg-max-width-rpx"
+        />
+        <view class="block" style="max-width: {{egMaxWidthRpx}}rpx"></view>
+    </view>
+
+    <view class="example">
+        <text>单位: vw</text>
+        <slider 
+            show-value="{{true}}" 
+            min="{{0}}" 
+            max="{{100}}" 
+            step="1"
+            value="{{egMaxWidthVw}}"
+            bindchanging="onSlideChanging"
+            data-egname="eg-max-width-vw"
+        />
+        <view class="block" style="max-width: {{egMaxWidthVw}}vw"></view>
+    </view>
+
+    <view class="example">
+        <text>单位: %</text>
+        <slider 
+            show-value="{{true}}" 
+            min="{{0}}" 
+            max="{{100}}" 
+            step="1"
+            value="{{egMaxWidthPercent}}"
+            bindchanging="onSlideChanging"
+            data-egname="eg-max-width-percent"
+        />
+        <view class="block" style="max-width: {{egMaxWidthPercent}}%"></view>
+    </view>
+</view>
