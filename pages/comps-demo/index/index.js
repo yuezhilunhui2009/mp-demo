@@ -10,7 +10,7 @@ Page({
         id: 'content',
         name: '基础内容',
         open: false,
-        pages: ['text', 'icon', 'progress', 'rich-text']
+        pages: ['text', 'icon', 'rich-text', 'progress']
       }, {
         id: 'form',
         name: '表单组件',
@@ -20,12 +20,12 @@ Page({
         id: 'nav',
         name: '导航',
         open: false,
-        pages: ['navigator']
+        pages: ['navigator', 'functional-page-navigator']
       }, {
         id: 'media',
         name: '媒体组件',
         open: false,
-        pages: ['image', 'audio', 'video', 'camera']
+        pages: ['audio', 'image', 'video', 'camera', 'live-player', 'live-pusher']
       }, {
         id: 'map',
         name: '地图',
@@ -37,7 +37,7 @@ Page({
       }, {
         id: 'ad',
         name: '开放能力',
-        pages: ['ad', 'open-data', 'web-view']
+        pages: ['open-data', 'web-view', 'ad', 'official-account']
       }
     ]
   },

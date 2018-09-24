@@ -1,0 +1,12 @@
+/* pages/framework-demo/global-config/global-config.wxss */
+.table {
+    font-size: 12rpx;
+}
+
+.tr {
+
+}
+
+.td {
+    display: inline;
+}

@@ -2,38 +2,38 @@ Page({
   data: {
     list: [
       {
-        id: 'view',
-        name: '视图容器',
+        id: 'network',
+        name: '网络',
         open: false,
-        pages: ['view', 'scroll-view', 'swiper', 'movable-view', 'cover-view']
+        pages: ['download', 'request', 'web-socket', 'upload']
       }, {
-        id: 'content',
-        name: '基础内容',
+        id: 'multi-media',
+        name: '多媒体',
         open: false,
-        pages: ['text', 'icon', 'progress', 'rich-text']
+        pages: ['audio', 'camera', 'real-time-audio', 'video', 'font', 'image', 'background-audio', 'record-audio']
       }, {
-        id: 'form',
-        name: '表单组件',
+        id: 'file',
+        name: '文件',
         open: false,
-        pages: ['button', 'checkbox', 'form', 'input', 'label', 'picker', 'picker-view', 'radio', 'slider', 'switch', 'textarea']
+        pages: ['file']
       }, {
-        id: 'nav',
-        name: '导航',
+        id: 'cache',
+        name: '数据缓存',
         open: false,
-        pages: ['navigator']
+        pages: ['cache']
       }, {
-        id: 'media',
-        name: '媒体组件',
+        id: 'location',
+        name: '位置',
         open: false,
-        pages: ['image', 'audio', 'video', 'camera']
+        pages: ['location']
       }, {
-        id: 'map',
-        name: '地图',
-        pages: ['map']
+        id: 'device',
+        name: '设备',
+        pages: ['network', 'accelerometer', 'clipboard', 'compass', 'contact', 'gyroscope', 'beacons', 'motion', 'battery', 'phone-call', 'scan-code', 'vibrate', 'memery-warning', 'blue-tooth', 'nfc', 'screen', 'wifi']
       }, {
-        id: 'canvas',
-        name: '画布',
-        pages: ['canvas']
+        id: 'gui',
+        name: '界面',
+        pages: ['pull-down-refresh', 'next-tick', 'menu', 'tips', 'scroll', 'animation', 'window', 'background', 'tab-bar', 'top-bar', 'navigation-bar']
       }, {
         id: 'ad',
         name: '开放能力',

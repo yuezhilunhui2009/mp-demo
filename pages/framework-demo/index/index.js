@@ -2,42 +2,51 @@ Page({
   data: {
     list: [
       {
-        id: 'view',
-        name: '视图容器',
+        id: 'config',
+        name: '配置',
         open: false,
-        pages: ['view', 'scroll-view', 'swiper', 'movable-view', 'cover-view']
+        pages: ['global-config', 'page-config']
       }, {
-        id: 'content',
-        name: '基础内容',
+        id: 'logic-layer',
+        name: '逻辑层',
         open: false,
-        pages: ['text', 'icon', 'progress', 'rich-text']
+        pages: ['register-program', 'scene-value', 'register-page', 'router', 'module', 'API']
       }, {
-        id: 'form',
-        name: '表单组件',
+        id: 'view-layer',
+        name: '视图层',
         open: false,
-        pages: ['button', 'checkbox', 'form', 'input', 'label', 'picker', 'picker-view', 'radio', 'slider', 'switch', 'textarea']
+        pages: ['wxml', 'wxss', 'base-component', 'wxs', 'wxml-cover-state', 'reponsive-viewport']
       }, {
-        id: 'nav',
-        name: '导航',
+        id: 'custom-component',
+        name: '自定义组件',
         open: false,
-        pages: ['navigator']
+        pages: ['template-and-style', 'constructor', 'event', 'behaviors', 'relation', 'abstruct-node', 'extentions', 'third-part']
       }, {
-        id: 'media',
-        name: '媒体组件',
+        id: 'plugins',
+        name: '插件',
         open: false,
-        pages: ['image', 'audio', 'video', 'camera']
+        pages: ['develop', 'use', 'api-limit', 'component-limit', 'function-page']
       }, {
-        id: 'map',
-        name: '地图',
-        pages: ['map']
+        id: 'base-function',
+        name: '基础能力',
+        pages: ['network', 'storage', 'file-system', 'split-packages', 'multi-thred-worker']
       }, {
-        id: 'canvas',
-        name: '画布',
-        pages: ['canvas']
+        id: 'hardware-function',
+        name: '硬件能力',
+        pages: ['blue-tooth', 'nfc', 'wifi']
       }, {
-        id: 'ad',
+        id: 'open-function',
         name: '开放能力',
-        pages: ['ad', 'open-data', 'web-view']
+        pages: ['user-info', 'forward-message', 'launch-app', 'message', 'card', 'qr-code', 'data-analysis', 'nearby-mp']
+      }, {
+        id: 'useability',
+        name: '可用性',
+        pages: ['debug', 'runtime', 'operation-principle', 'performance']
+      },
+      {
+        id: 'library',
+        name: '基础库',
+        pages: ['version', 'native-relation', 'old-version-compatible', 'updated-log']
       }
     ]
   },
