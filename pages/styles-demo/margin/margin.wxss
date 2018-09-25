@@ -1,4 +1,4 @@
-/* pages/styles-demo/padding/padding.wxss */
+/* pages/styles-demo/margin/margin.wxss */
 @import "../../common/index.wxss";
 text {
     margin: 18px;
@@ -6,6 +6,10 @@ text {
 
 .example {
     width: 100%;
+}
+
+.cube-container {
+    background: #eee;
 }
 
 .cube {

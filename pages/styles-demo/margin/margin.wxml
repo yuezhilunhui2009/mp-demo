@@ -1,0 +1,107 @@
+<!--pages/styles-demo/margin/margin.wxml-->
+<!--pages/styles-demo/padding/padding.wxml-->
+<view class="container">
+    <view class="example">
+        <text>margin 设置为 auto：</text>
+        <radio-group class="radio-group" bindchange="onRadioChange">
+            <label class="radio">
+                <radio value="{{true}}" checked="{{isMarginAuto}}"/>auto
+            </label>
+            <label class="radio">
+                <radio value="{{false}}" checked="{{!isMarginAuto}}"/>数值
+            </label>
+        </radio-group>
+
+        <text>属性: margin-top</text>
+        <text>单位: rpx</text>
+        <slider 
+            show-value="{{true}}" 
+            min="{{0}}" 
+            max="{{750}}" 
+            step="1"
+            value="{{egMarginTop}}"
+            bindchanging="onSlideChanging"
+            data-egname="eg-margin-top"
+        />
+        <text>属性: margin-right</text>
+        <text>单位: rpx</text>
+        <slider 
+            show-value="{{true}}" 
+            min="{{0}}" 
+            max="{{750}}" 
+            step="1"
+            value="{{egMarginRight}}"
+            bindchanging="onSlideChanging"
+            data-egname="eg-margin-right"
+        />
+        <text>属性: margin-bottom</text>
+        <text>单位: rpx</text>
+        <slider 
+            show-value="{{true}}" 
+            min="{{0}}" 
+            max="{{750}}" 
+            step="1"
+            value="{{egMarginBottom}}"
+            bindchanging="onSlideChanging"
+            data-egname="eg-margin-bottom"
+        />
+        <text>属性: margin-left</text>
+        <text>单位: rpx</text>
+        <slider 
+            show-value="{{true}}" 
+            min="{{0}}" 
+            max="{{750}}" 
+            step="1"
+            value="{{egMarginLeft}}"
+            bindchanging="onSlideChanging"
+            data-egname="eg-margin-left"
+        />
+        <text>属性: padding</text>
+        <text>单位: rpx</text>
+        <slider 
+            show-value="{{true}}" 
+            min="{{0}}" 
+            max="{{750}}" 
+            step="1"
+            value="{{egMargin}}"
+            bindchanging="onSlideChanging"
+            data-egname="eg-margin"
+        />
+
+        <text>1、单个 view 撑开容器，与容器外边距重叠</text>
+        <view class="cube-container">
+            <view 
+                class="cube"
+                style="margin-top: {{egMarginTop}}rpx;margin-right: {{egMarginRight}}rpx;margin-bottom: {{egMarginBottom}}rpx;margin-left: {{egMarginLeft}}rpx;"
+            >
+                <view class="cube-content"></view>
+            </view>
+        </view>
+
+        <text>2、单个 view 撑开容器</text>
+        <view class="cube-container" style="border: solid 1px rgb(0, 0, 0)">
+            <view 
+                class="cube"
+                style="margin-top: {{egMarginTop}}rpx;margin-right: {{egMarginRight}}rpx;margin-bottom: {{egMarginBottom}}rpx;margin-left: {{egMarginLeft}}rpx;"
+            >
+                <view class="cube-content"></view>
+            </view>
+        </view>
+
+        <text>3、两个 view 外边距重叠</text>   
+        <view class="cube-container" style="border: solid 1px rgb(0, 0, 0)">
+            <view 
+                class="cube"
+                style="margin-top: {{egMarginTop}}rpx;margin-right: {{egMarginRight}}rpx;margin-bottom: {{egMarginBottom}}rpx;margin-left: {{egMarginLeft}}rpx;"
+            >
+                <view class="cube-content"></view>
+            </view>
+            <view 
+                class="cube"
+                style="margin-top: {{egMarginTop}}rpx;margin-right: {{egMarginRight}}rpx;margin-bottom: {{egMarginBottom}}rpx;margin-left: {{egMarginLeft}}rpx;"
+            >
+                <view class="cube-content"></view>
+            </view>
+        </view>
+    </view>
+</view>
