@@ -1,2 +1,61 @@
 <!--pages/styles-demo/box-shadow/box-shadow.wxml-->
-<text>pages/styles-demo/box-shadow/box-shadow.wxml</text>
+<view class="container">
+    <view class="exmaple">
+        <view>
+            <text>属性: border-shadow</text>
+            <text>单位: rpx</text>
+        </view>
+
+        <text>水平偏移</text>
+        <slider 
+            show-value="{{true}}" 
+            min="{{-25}}" 
+            max="{{25}}" 
+            step="1"
+            value="{{egBoxShadowX}}"
+            bindchanging="onSlideChanging"
+            data-egname="eg-box-shadow-x"
+        />
+
+        <text>垂直偏移</text>
+        <slider 
+            show-value="{{true}}" 
+            min="{{-25}}" 
+            max="{{25}}" 
+            step="1"
+            value="{{egBoxShadowY}}"
+            bindchanging="onSlideChanging"
+            data-egname="eg-box-shadow-y"
+        />
+
+        <text>模糊值</text>
+        <slider 
+            show-value="{{true}}" 
+            min="{{0}}" 
+            max="{{50}}" 
+            step="1"
+            value="{{egBoxShadowBlur}}"
+            bindchanging="onSlideChanging"
+            data-egname="eg-box-shadow-blur"
+        />
+
+        <text>外延值</text>
+        <slider 
+            show-value="{{true}}" 
+            min="{{0}}" 
+            max="{{50}}" 
+            step="1"
+            value="{{egBoxShadowSpread}}"
+            bindchanging="onSlideChanging"
+            data-egname="eg-box-shadow-spread"
+        />
+
+        <!-- demo -->
+        <view 
+            class="cube"
+            style="box-shadow: {{egBoxShadowX}}rpx {{egBoxShadowY}}rpx {{egBoxShadowBlur}}rpx {{egBoxShadowSpread}}rpx {{egBoxShadowColor}}"
+        >
+            <view class="cube-content"></view>
+        </view>
+    </view>
+</view>

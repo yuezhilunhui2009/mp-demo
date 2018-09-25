@@ -1,4 +1,5 @@
 /* pages/styles-demo/min-height/min-height.wxss */
+@import "../../common/index.wxss";
 text {
     margin: 18px;
 }

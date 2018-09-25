@@ -1,4 +1,5 @@
 /* pages/styles-demo/width/width.wxss */
+@import "../../common/index.wxss";
 text {
     margin: 18px;
 }

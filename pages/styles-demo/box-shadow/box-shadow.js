@@ -1,11 +1,22 @@
 // pages/styles-demo/box-shadow/box-shadow.js
+const domNameAndDataMap = {
+  ['eg-box-shadow-x']: 'egBoxShadowX',
+  ['eg-box-shadow-y']: 'egBoxShadowY',
+  ['eg-box-shadow-blur']: 'egBoxShadowBlur',
+  ['eg-box-shadow-spread']: 'egBoxShadowSpread'
+}
+
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+    egBoxShadowX: 2,
+    egBoxShadowY: 2,
+    egBoxShadowBlur: 5,
+    egBoxShadowSpread: 2,
+    egBoxShadowColor: 'rgb(200, 200, 200)'
   },
 
   /**
@@ -62,5 +73,11 @@ Page({
    */
   onShareAppMessage: function () {
 
-  }
+  },
+
+  onSlideChanging: function (e) {
+    this.setData({
+      [domNameAndDataMap[e.currentTarget.dataset.egname]]: e.detail.value,
+    })
+  },
 })

@@ -1,1 +1,25 @@
 /* pages/styles-demo/box-shadow/box-shadow.wxss */
+@import "../../common/index.wxss";
+text {
+    margin: 18px;
+}
+
+.example {
+    width: 100%;
+}
+
+.cube {
+    width: 200rpx;
+    height: 200rpx;
+    margin: 20rpx auto;
+    background-color: #fff;
+}
+
+.cube-content {
+    width: 100%;
+    height: 100%;
+    background-color: fff;
+    font-size: 14px;
+    line-height: 14px;
+    text-align: center;
+}

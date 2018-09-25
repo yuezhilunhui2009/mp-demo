@@ -109,3 +109,7 @@
 .kind-list-item-bd-show {
   height: auto;
 }
+
+.example slider {
+  padding-left: 50rpx;
+}

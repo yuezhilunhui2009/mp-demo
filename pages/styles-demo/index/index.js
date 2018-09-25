@@ -5,7 +5,7 @@ Page({
         id: 'box',
         name: '盒子',
         open: false,
-        pages: ['width', 'min-width', 'max-width', 'height', 'min-height', 'max-height', 'padding', 'border', 'border-radius', 'border-image', 'box-shadow', 'margin']
+        pages: ['width', 'min-width', 'max-width', 'height', 'min-height', 'max-height', 'padding', 'border', 'border-image', 'box-shadow', 'margin']
       },
       {
         id: 'layout',
