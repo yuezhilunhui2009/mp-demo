@@ -1,0 +1,9 @@
+/* pages/styles-demo/overflow/overflow.wxss */
+.overflow-wrap {
+    background: #eee;
+    border: solid 1rpx #666;
+}
+
+.example {
+    background: #fff;
+}

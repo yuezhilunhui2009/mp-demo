@@ -18,7 +18,8 @@
     "pages/styles-demo/margin/margin",
     "pages/styles-demo/display/display",
     "pages/styles-demo/float/float",
-    "pages/styles-demo/visibility/visibility"
+    "pages/styles-demo/visibility/visibility",
+    "pages/styles-demo/overflow/overflow"
   ],
   "window": {
     "navigationBarBackgroundColor": "#222",
