@@ -8,7 +8,7 @@ text {
     width: 100%;
 }
 
-.example .block {
+.block {
     width: 100%;
     background-color: #34ff34;
 }

@@ -1,0 +1,198 @@
+<!--pages/styles-demo/display/display.wxml-->
+<view class="example">
+    <text>容器属性: display</text>
+    <radio-group class="radio-group" bindchange="onRadioChange" data-egname="eg-parent-display">
+        <label class="radio" wx:for="{{display}}">
+            <radio 
+                value="{{item.value}}" 
+                checked="{{item.checked}}" />{{item.name}}
+        </label>
+    </radio-group>
+
+    <text>child view 属性: display</text>
+    <radio-group class="radio-group" bindchange="onRadioChange" data-egname="eg-child-display">
+        <label class="radio" wx:for="{{display}}">
+            <radio 
+                value="{{item.value}}" 
+                checked="{{item.checked}}" />{{item.name}}
+        </label>
+    </radio-group>
+
+    <view class="parent" style="display:{{egParentDisplay}}">
+        <view class="child" style="display:{{egChildDisplay}}">child-1</view>
+        <view class="child" style="display:{{egChildDisplay}}">child-2</view>
+        <view class="child" style="display:{{egChildDisplay}}">child-3</view>
+        <view class="child" style="display:{{egChildDisplay}}">child-4</view>
+    </view>
+
+    <view>
+        <text>flex example：</text>
+    </view>
+
+    <view 
+        class="flex-parent"
+        style="flex-direction:{{egFlexDirection}};flex-wrap:{{egFlexWrap}};justify-content:{{egJustifyContent}};align-content:{{egAlignContent}};align-items:{{egAlignItems}}"
+    >
+        <view 
+            class="flex-child green-1" 
+            style="flex-basis:{{egFlexBasis}}rpx;flex-grow:{{egFlexGrow1}};flex-shrink:{{egFlexShrink1}}">1</view>
+        <view 
+            class="flex-child green-2" 
+            style="flex-basis:{{egFlexBasis}}rpx;flex-grow:{{egFlexGrow2}};flex-shrink:{{egFlexShrink2}}">2</view>
+        <view 
+            class="flex-child green-3" 
+            style="flex-basis:{{egFlexBasis}}rpx;flex-grow:{{egFlexGrow3}};flex-shrink:{{egFlexShrink3}}">3</view>
+        <view 
+            class="flex-child green-4" 
+            style="flex-basis:{{egFlexBasis}}rpx;flex-grow:{{egFlexGrow4}};flex-shrink:{{egFlexShrink4}}">4</view>
+    </view>
+
+    <view>
+        <text>flex-direction：</text>
+        <radio-group class="radio-group" bindchange="onRadioChange" data-egname="eg-flex-direction">
+            <label class="radio" wx:for="{{flexDirection}}">
+                <radio value="{{item.value}}" checked="{{item.checked}}" />{{item.name}}
+            </label>
+        </radio-group>
+    </view>
+    <view>
+        <text>flex-wrap：</text>
+        <radio-group class="radio-group" bindchange="onRadioChange" data-egname="eg-flex-wrap">
+            <label class="radio" wx:for="{{flexWrap}}">
+                <radio value="{{item.value}}" checked="{{item.checked}}" />{{item.name}}
+            </label>
+        </radio-group>
+    </view>
+    <view>
+        <text>justify-content：</text>
+        <radio-group class="radio-group" bindchange="onRadioChange" data-egname="eg-justify-content">
+            <label class="radio" wx:for="{{justifyContent}}">
+                <radio value="{{item.value}}" checked="{{item.checked}}" />{{item.name}}
+            </label>
+        </radio-group>
+    </view>
+    <view>
+        <text>align-content：</text>
+        <radio-group class="radio-group" bindchange="onRadioChange" data-egname="eg-align-content">
+            <label class="radio" wx:for="{{alignContent}}">
+                <radio value="{{item.value}}" checked="{{item.checked}}" />{{item.name}}
+            </label>
+        </radio-group>
+    </view>
+    <view>
+        <text>align-items：</text>
+        <radio-group class="radio-group" bindchange="onRadioChange" data-egname="eg-align-items">
+            <label class="radio" wx:for="{{alignItems}}">
+                <radio value="{{item.value}}" checked="{{item.checked}}" />{{item.name}}
+            </label>
+        </radio-group>
+    </view>
+    <view>
+        <text>flex-basis：</text>
+        <slider 
+            show-value="{{true}}" 
+            min="{{0}}" 
+            max="{{750}}" 
+            step="1"
+            value="{{egFlexBasis}}"
+            bindchanging="onSlideChanging"
+            data-egname="eg-flex-basis"
+        />
+    </view> 
+    <view>
+        <text>flex-grow(1)：</text>
+        <slider 
+            show-value="{{true}}" 
+            min="{{0}}" 
+            max="{{100}}" 
+            step="1"
+            value="{{egFlexGrow1}}"
+            bindchanging="onSlideChanging"
+            data-egname="eg-flex-grow-1"
+        />
+    </view>
+    <view>
+        <text>flex-grow(2)：</text>
+        <slider 
+            show-value="{{true}}" 
+            min="{{0}}" 
+            max="{{100}}" 
+            step="1"
+            value="{{egFlexGrow2}}"
+            bindchanging="onSlideChanging"
+            data-egname="eg-flex-grow-2"
+        />
+    </view>
+    <view>
+        <text>flex-grow(3)：</text>
+        <slider 
+            show-value="{{true}}" 
+            min="{{0}}" 
+            max="{{100}}" 
+            step="1"
+            value="{{egFlexGrow3}}"
+            bindchanging="onSlideChanging"
+            data-egname="eg-flex-grow-3"
+        />
+    </view>
+    <view>
+        <text>flex-grow(4)：</text>
+        <slider 
+            show-value="{{true}}" 
+            min="{{0}}" 
+            max="{{100}}" 
+            step="1"
+            value="{{egFlexGrow4}}"
+            bindchanging="onSlideChanging"
+            data-egname="eg-flex-grow-4"
+        />
+    </view>
+    <view>
+        <text>flex-shrink(1)：</text>
+        <slider 
+            show-value="{{true}}" 
+            min="{{0}}" 
+            max="{{100}}" 
+            step="1"
+            value="{{egFlexShrink1}}"
+            bindchanging="onSlideChanging"
+            data-egname="eg-flex-shrink-1"
+        />
+    </view>
+    <view>
+        <text>flex-shrink(2)：</text>
+        <slider 
+            show-value="{{true}}" 
+            min="{{0}}" 
+            max="{{100}}" 
+            step="1"
+            value="{{egFlexShrink2}}"
+            bindchanging="onSlideChanging"
+            data-egname="eg-flex-shrink-2"
+        />
+    </view>
+    <view>
+        <text>flex-shrink(3)：</text>
+        <slider 
+            show-value="{{true}}" 
+            min="{{0}}" 
+            max="{{100}}" 
+            step="1"
+            value="{{egFlexShrink3}}"
+            bindchanging="onSlideChanging"
+            data-egname="eg-flex-shrink-3"
+        />
+    </view>
+    <view>
+        <text>flex-shrink(4)：</text>
+        <slider 
+            show-value="{{true}}" 
+            min="{{0}}" 
+            max="{{100}}" 
+            step="1"
+            value="{{egFlexShrink4}}"
+            bindchanging="onSlideChanging"
+            data-egname="eg-flex-shrink-4"
+        />
+    </view>
+</view>
