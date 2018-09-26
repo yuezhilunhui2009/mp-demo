@@ -1,2 +1,151 @@
 <!--pages/styles-demo/position/position.wxml-->
-<text>pages/styles-demo/position/position.wxml</text>
+<view class="example">
+    <text>static - 兄弟结点</text>
+    <view 
+        class="border size-normal green-1"
+        style="position: {{egPosition1}};top: {{egTop1}}rpx;right: {{egRight1}}rpx;bottom: {{egBottom1}}rpx;left: {{egLeft1}}rpx"
+    >
+        1
+    </view>
+    <view 
+        class="border size-normal green-2"
+        style="position: {{egPosition2}};top: {{egTop2}}rpx;right: {{egRight2}}rpx;bottom: {{egBottom2}}rpx;left: {{egLeft2}}rpx"
+    >
+        2
+    </view>
+</view>
+
+<view class="example">
+    <text>static - 父子结点</text>
+    <view 
+        class="border size-big green-1"
+        style="position: {{egPosition1}};top: {{egTop1}}rpx;right: {{egRight1}}rpx;bottom: {{egBottom1}}rpx;left: {{egLeft1}}rpx"
+    >
+        <view 
+            class="border size-normal green-2"
+            style="position: {{egPosition2}};top: {{egTop2}}rpx;right: {{egRight2}}rpx;bottom: {{egBottom2}}rpx;left: {{egLeft2}}rpx"
+        >
+            2
+        </view>
+        1
+    </view>
+</view>
+
+<view class="example">
+    <view>
+        <text>1 号结点 position：</text>
+        <radio-group class="radio-group" bindchange="onRadioChange" data-egname="eg-position-1">
+            <label class="radio" wx:for="{{position}}">
+                <radio 
+                    value="{{item.value}}" 
+                    checked="{{item.checked}}" />{{item.name}}
+            </label>
+        </radio-group>
+    </view>
+    <view>
+        <text>2 号结点 position：</text>
+        <radio-group class="radio-group" bindchange="onRadioChange" data-egname="eg-position-2">
+            <label class="radio" wx:for="{{position}}">
+                <radio 
+                    value="{{item.value}}" 
+                    checked="{{item.checked}}" />{{item.name}}
+            </label>
+        </radio-group>
+    </view>
+    <view>
+        <text>1 号结点 top：</text>
+        <slider 
+            show-value="{{true}}" 
+            min="{{-100}}" 
+            max="{{100}}" 
+            step="1"
+            value="{{egTop1}}"
+            bindchanging="onSlideChanging"
+            data-egname="eg-top-1"
+        />
+    </view>
+    <view>
+        <text>1 号结点 right：</text>
+        <slider 
+            show-value="{{true}}" 
+            min="{{-100}}" 
+            max="{{100}}" 
+            step="1"
+            value="{{egRight1}}"
+            bindchanging="onSlideChanging"
+            data-egname="eg-right-1"
+        />
+    </view>
+    <view>
+        <text>1 号结点 bottom：</text>
+        <slider 
+            show-value="{{true}}" 
+            min="{{-100}}" 
+            max="{{100}}" 
+            step="1"
+            value="{{egBottom1}}"
+            bindchanging="onSlideChanging"
+            data-egname="eg-bottom-1"
+        />
+    </view>
+    <view>
+        <text>1 号结点 left：</text>
+        <slider 
+            show-value="{{true}}" 
+            min="{{-100}}" 
+            max="{{100}}" 
+            step="1"
+            value="{{egLeft1}}"
+            bindchanging="onSlideChanging"
+            data-egname="eg-left-1"
+        />
+    </view>
+    <view>
+        <text>2 号结点 top：</text>
+        <slider 
+            show-value="{{true}}" 
+            min="{{-100}}" 
+            max="{{100}}" 
+            step="1"
+            value="{{egTop2}}"
+            bindchanging="onSlideChanging"
+            data-egname="eg-top-2"
+        />
+    </view>
+    <view>
+        <text>2 号结点 right：</text>
+        <slider 
+            show-value="{{true}}" 
+            min="{{-100}}" 
+            max="{{100}}" 
+            step="1"
+            value="{{egRight2}}"
+            bindchanging="onSlideChanging"
+            data-egname="eg-right-2"
+        />
+    </view>
+    <view>
+        <text>2 号结点 bottom：</text>
+        <slider 
+            show-value="{{true}}" 
+            min="{{-100}}" 
+            max="{{100}}" 
+            step="1"
+            value="{{egBottom2}}"
+            bindchanging="onSlideChanging"
+            data-egname="eg-bottom-2"
+        />
+    </view>
+    <view>
+        <text>2 号结点 left：</text>
+        <slider 
+            show-value="{{true}}" 
+            min="{{-100}}" 
+            max="{{100}}" 
+            step="1"
+            value="{{egLeft2}}"
+            bindchanging="onSlideChanging"
+            data-egname="eg-left-2"
+        />
+    </view>
+</view>
