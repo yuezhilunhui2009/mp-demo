@@ -1,11 +1,17 @@
 // pages/styles-demo/z-index/z-index.js
+const domNameAndDataMap = {
+  ['eg-z-index-1']: 'egZIndex1',
+  ['eg-z-index-2']: 'egZIndex2',
+}
+
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+    egZIndex1: 0,
+    egZIndex2: 0
   },
 
   /**
@@ -62,5 +68,12 @@ Page({
    */
   onShareAppMessage: function () {
 
+  },
+
+  onSlideChanging: function (e) {
+    let { value } = e.detail
+    this.setData({
+      [domNameAndDataMap[e.currentTarget.dataset.egname]]: e.detail.value,
+    })
   }
 })

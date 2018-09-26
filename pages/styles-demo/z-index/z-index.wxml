@@ -1,2 +1,57 @@
 <!--pages/styles-demo/z-index/z-index.wxml-->
-<text>pages/styles-demo/z-index/z-index.wxml</text>
+<view class="example">
+    <text>兄弟结点 absolute 默认层叠：</text>
+    <view 
+        class="border size-big green-1"
+    >
+        1
+    </view>
+    <view 
+        class="border size-normal green-2"
+    >
+        2
+    </view>
+</view>
+
+<view class="example">
+    <text>兄弟结点 absolute 设置 z-index：</text>
+    <view 
+        class="border size-big green-1"
+        style="z-index:{{egZIndex1}}"
+    >
+        1
+    </view>
+    <view 
+        class="border size-normal green-2"
+        style="z-index:{{egZIndex2}}"
+    >
+        2
+    </view>
+</view>
+
+<view class="example">
+    <view>
+        <text>1 号结点 z-index：</text>
+        <slider 
+            show-value="{{true}}" 
+            min="{{-10}}" 
+            max="{{100}}" 
+            step="1"
+            value="{{egZIndex1}}"
+            bindchanging="onSlideChanging"
+            data-egname="eg-z-index-1"
+        />
+    </view>
+    <view>
+        <text>2 号结点 z-index：</text>
+        <slider 
+            show-value="{{true}}" 
+            min="{{-10}}" 
+            max="{{100}}" 
+            step="1"
+            value="{{egZIndex2}}"
+            bindchanging="onSlideChanging"
+            data-egname="eg-z-index-2"
+        />
+    </view>
+</view>
