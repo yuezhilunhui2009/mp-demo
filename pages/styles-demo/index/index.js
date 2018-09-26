@@ -17,13 +17,13 @@ Page({
         id: 'position',
         name: '定位',
         open: false,
-        pages: ['position', 'z-index', 'top', 'right', 'bottom', 'left']
+        pages: ['position', 'z-index']
       },
       {
         id: 'background',
         name: '背景',
         open: false,
-        pages: ['background', 'background-color', 'background-image', 'background-repeat', 'background-attachment', 'background-position']
+        pages: ['background', 'background-attachment']
       }
     ]
   },

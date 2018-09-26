@@ -19,7 +19,10 @@
     "pages/styles-demo/display/display",
     "pages/styles-demo/float/float",
     "pages/styles-demo/visibility/visibility",
-    "pages/styles-demo/overflow/overflow"
+    "pages/styles-demo/overflow/overflow",
+    "pages/styles-demo/position/position",
+    "pages/styles-demo/z-index/z-index",
+    "pages/styles-demo/background/background"
   ],
   "window": {
     "navigationBarBackgroundColor": "#222",
