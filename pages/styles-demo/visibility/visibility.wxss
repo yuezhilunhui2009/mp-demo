@@ -1,0 +1,9 @@
+/* pages/styles-demo/visibility/visibility.wxss */
+@import "../../common/index.wxss";
+text {
+    margin: 18px;
+}
+
+.example {
+    width: 100%;
+}

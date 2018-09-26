@@ -11,7 +11,7 @@ Page({
         id: 'layout',
         name: '布局',
         open: false,
-        pages: ['display', 'float', 'visible', 'overflow']
+        pages: ['display', 'float', 'visibility', 'overflow']
       },
       {
         id: 'position',

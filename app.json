@@ -16,7 +16,9 @@
     "pages/styles-demo/border-image/border-image",
     "pages/framework-demo/global-config/global-config",
     "pages/styles-demo/margin/margin",
-    "pages/styles-demo/display/display"
+    "pages/styles-demo/display/display",
+    "pages/styles-demo/float/float",
+    "pages/styles-demo/visibility/visibility"
   ],
   "window": {
     "navigationBarBackgroundColor": "#222",
