@@ -1,2 +1,2 @@
 <!--pages/framework-demo/router/router.wxml-->
-<text>pages/framework-demo/router/router.wxml</text>
+<button bind:tap="onClickCopyBtn" data-url="wechatide://minicode/nd6kJKmt7z2A">复制代码片段链接</button>
