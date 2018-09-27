@@ -28,7 +28,8 @@
     "pages/framework-demo/api/api",
     "pages/framework-demo/module/module",
     "pages/framework-demo/router/router",
-    "pages/framework-demo/scene-value/scene-value"
+    "pages/framework-demo/scene-value/scene-value",
+    "pages/framework-demo/register-page/register-page"
   ],
   "window": {
     "navigationBarBackgroundColor": "#222",

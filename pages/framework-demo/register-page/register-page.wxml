@@ -1,0 +1,2 @@
+<!--pages/framework-demo/register-page/register-page.wxml-->
+<button bind:tap="onClickCopyBtn" data-url="wechatide://minicode/twWzrJmO7n28">复制代码片段链接</button>
