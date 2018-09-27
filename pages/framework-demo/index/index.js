@@ -10,7 +10,7 @@ Page({
         id: 'logic-layer',
         name: '逻辑层',
         open: false,
-        pages: ['register-program', 'scene-value', 'register-page', 'router', 'module', 'API']
+        pages: ['register-program', 'scene-value', 'register-page', 'router', 'module']
       }, {
         id: 'view-layer',
         name: '视图层',

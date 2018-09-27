@@ -1,4 +1,4 @@
-// pages/framework-demo/api/api.js
+// pages/framework-demo/wxml/wxml.js
 Page({
 
   /**

@@ -1,2 +1,14 @@
 <!--pages/framework-demo/module/module.wxml-->
-<text>pages/framework-demo/module/module.wxml</text>
+<view>
+    <text>在 JavaScript 文件中声明的变量和函数只在该文件中有效；</text>
+</view>
+<view>
+    <text>通过全局函数 getApp() 可以获取全局的应用实例，如果需要全局的数据可以在 App() 中设置；</text>
+</view>
+<view>
+    <text>模块只有通过 module.exports 或者 exports 才能对外暴露接口；</text>
+</view>
+<view>
+    <text>require 暂时不支持绝对路径；</text>
+</view>
+

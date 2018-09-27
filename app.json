@@ -25,11 +25,13 @@
     "pages/styles-demo/background/background",
     "pages/framework-demo/page-config/page-config",
     "pages/framework-demo/register-program/register-program",
-    "pages/framework-demo/api/api",
     "pages/framework-demo/module/module",
     "pages/framework-demo/router/router",
     "pages/framework-demo/scene-value/scene-value",
-    "pages/framework-demo/register-page/register-page"
+    "pages/framework-demo/register-page/register-page",
+    "pages/framework-demo/wxml/wxml",
+    "pages/framework-demo/wxss/wxss",
+    "pages/framework-demo/base-component/base-component"
   ],
   "window": {
     "navigationBarBackgroundColor": "#222",
