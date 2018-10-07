@@ -1,2 +1,72 @@
 <!--pages/framework-demo/wxml/wxml.wxml-->
-<text>pages/framework-demo/wxml/wxml.wxml</text>
+<view>
+    <text>message:{{message}}</text>
+</view>
+<view>
+    <view wx:for="{{list}}">
+        <text>index:{{index}} item:{{item}}</text>
+    </view>
+    <view wx:for="{{list}}" wx:for-index="myIndex" wx:for-item="myItem">
+        <text>myIndex:{{myIndex}} myItem:{{myItem}}</text>
+    </view>
+</view>
+<view>
+    <view wx:if="{{VIEW_TRUE}}"><text>view_true</text></view>
+    <view wx:if="{{VIEW_FALSE}}"><text>view_false</text></view>
+    <view wx:elif="{{false}}">
+        <text>elif false</text>
+    </view>
+    <view wx:else>
+        <text>else</text>
+    </view>
+</view>
+
+<template name="myTemplate">
+    <view>
+        <text>myTemplate:{{message}}</text>
+    </view>
+</template>
+
+<template is="myTemplate" data="{{message}}" />
+
+<view>
+    <text>事件绑定：</text>
+</view>
+<view
+    style="width: 100rpx;height: 100rpx;background: red;"
+    bind:touchstart="eventHandler"
+    bind:touchmove="eventHandler"
+    bind:touchcancel="eventHandler"
+    bind:touchend="eventHandler"
+    bind:tap="eventHandler"
+    bind:longpress="eventHandler"
+    bind:longtap="eventHandler"
+    bind:animationstart="eventHandler"
+    bind:animationiteration="eventHandler"
+    bind:animationend="eventHandler"
+    bind:touchforcechange="eventHandler"
+>
+</view>
+
+<view>
+    <text>事件冒泡 & 阻止事件冒泡</text>
+</view>
+<view id="outer" bind:tap="eventHandler" style="padding: 30rpx;background: #888;">
+  outer view
+  <view id="middle" catch:tap="eventHandler" style="padding: 30rpx;background: #777;">
+    middle view
+    <view id="inner" bind:tap="eventHandler" style="height: 100rpx;background: #666;">
+      inner view
+    </view>
+  </view>
+</view>
+
+<view>
+    <text>事件捕获阶段 & 阻止事件捕获</text>
+</view>
+<view id="outer" bind:touchstart="eventHandler" capture-bind:touchstart="eventHandler">
+  outer view
+  <view id="inner" bind:touchstart="eventHandler" capture-bind:touchstart="eventHandler">
+    inner view
+  </view>
+</view>

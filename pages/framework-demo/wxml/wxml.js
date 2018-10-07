@@ -5,7 +5,26 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    // 简单数据
+    message: 'mp-demo示例文案',
+    // 列表数据
+    list: [
+      'm-demo列表示例文案',
+      'm-demo列表示例文案',
+      'm-demo列表示例文案',
+      'm-demo列表示例文案',
+      'm-demo列表示例文案'
+    ],
+    // 条件
+    VIEW_TRUE: true,
+    VIEW_FALSE: false,
+    // 模板数据
+    templateA: {
+      message: 'this is template A instance'
+    },
+    templateB: {
+      message: 'this is template B instance'
+    }
   },
 
   /**
@@ -62,5 +81,9 @@ Page({
    */
   onShareAppMessage: function () {
 
-  }
+  },
+
+  eventHandler: function (e) {
+    console.log(e, e.currentTarget.id)
+  },
 })
